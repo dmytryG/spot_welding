@@ -13,7 +13,6 @@ RelayProcessor * relayProcessor;
 
 void setup() {
     // put your setup code here, to run once:
-    Serial.begin(9600);
     config = new Config();
     display = new Display(config);
     controls = new Controls(config);

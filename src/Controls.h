@@ -22,13 +22,9 @@ public:
         less->loop();
         more->loop();
         if (less->isPressed()) {
-            Serial.print("Subtracted 10, now its ");
             config->expo -= 10;
-            Serial.println(config->expo);
         } else if (more->isPressed()) {
-            Serial.print("Added 10, now its ");
             config->expo += 10;
-            Serial.println(config->expo);
         }
     }
 };

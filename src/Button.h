@@ -31,8 +31,6 @@ public:
             this->lastNotPressed = millis();
             this->isClickProcessed = false;
         } else {
-            Serial.print("Delta ");
-            Serial.println(millis() - this->lastNotPressed);
             if (millis() - this->lastNotPressed > 100 && millis() - this->lastNotPressed < 500) {
                 this->hasPressed = true;
             } else {
